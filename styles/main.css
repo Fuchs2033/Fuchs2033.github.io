@@ -1,0 +1,295 @@
+@font-face {
+	font-family: "Inter";
+	src:
+		local("Inter"), 
+		url("../fonts/Inter-VariableFont_opsz,wght.ttf")
+		format("truetype");
+		font-weight: 500;
+}
+
+body {
+	font-family: "Inter";
+	margin: 0px;
+}
+
+header {
+	margin-top: 30px;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0px 18.75vw;
+}
+
+.container2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container3 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 164px;
+	height: 156px;
+	background: #00000008;
+	border-radius: 20px;
+	padding: 30px;
+	margin: 5px 0px;
+}
+
+.date {
+	font-size: 14px;
+	color: #838383;
+	margin: 0px;
+}
+
+.text {
+	font-size: 20px;
+	height: 60px;
+	margin: 0px;
+}
+
+.button1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 16px;
+	color: white;
+	width: 189px;
+	height: 60px;
+	border-radius: 10px;
+	background: #A6C81E;
+	text-align: center;
+	line-height: 60px;
+}
+
+.button2 {
+	font-size: 14px;
+	color: #A6C81E;
+	width: 160px;
+	height: 40px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 44px;
+	border: 2px solid #A6C81E;
+}
+
+.button3 {
+	font-size: 16px;
+	color: #A6C81E;
+	line-height: 60px;
+	width: 62.5vw;
+	height: 60px;
+	border-radius: 10px;
+	border: 2px solid #A6C81E;
+	text-align: center;
+	margin: 40px 18.75vw;
+	background: none;
+}
+
+.butt {
+	font-size: 16px;
+	color: #838383;
+	margin-left: 30px;
+	text-decoration: none;
+}
+
+.added {
+	font-size: 14px;
+	color: #838383;
+	margin: 0px;
+}
+
+#logo {
+	font-size: 18px;
+	width: 150px;
+}
+
+#logoImage {
+	margin-right: 20px;
+}
+
+#wrapable {
+	flex-wrap: wrap;
+}
+
+#mail {
+	font-size: 18px;
+	color: #A6C81E;
+}
+
+#footer {
+	height: 100px;
+	text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+	h1 {
+		font-size: 40px;
+	}
+
+	.container {
+		margin: 0px 5.21vw;
+	}
+	
+	.card {
+		width: 156px;
+	}
+	
+	.button3 {
+		width: 89.59vw;
+		margin: 40px 5.21vw;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	h1 {
+		font-size: 36px;
+	}
+
+	.container {
+		margin: 0px 20px;
+	}
+	
+	.container2 {
+		margin-bottom: 10px;
+	}
+
+	.card {
+		width: 100px;
+		height: 66px;
+		padding: 16px;
+	}
+	
+	.date {
+		font-size: 13px;
+	}
+	
+	.text {
+		font-size: 14px;
+	}
+
+	.button1 {
+		width: 44px;
+		height: 44px;
+	}
+
+	.button2 {
+		display: none;
+	}
+
+	.button3 {
+		width: 280px;
+		margin: 20px;
+	}
+
+	#logo {
+		display: none;
+	}
+
+	#post {
+		display: none;
+	}
+	
+	#footer {
+		flex-direction: column;
+		height: 60px;
+	}
+
+	#dev {
+		margin: 0px;
+	}
+	
+	.added {
+		display: none;
+	}
+}
+
+.active {
+	font-size: 32px;
+}
+
+.achtung {
+	font-size: 16px;
+	color: #B9B9B9;
+	text-align: center;
+}
+
+.modal-content {
+	width: 600px;
+	height: 350px;
+	border-radius: 20px;
+	background: #FFFFFF;
+}
+
+.unactive {
+	font-size: 32px;
+	color: #B9B9B9;
+}
+
+.Lcontainer {
+	display: flex;
+	justify-content: space-around;
+	margin: 0px 40px;
+	margin-bottom: 30px;
+	
+}
+
+.input {
+	width: 190px;
+	height: 20px;
+	border-radius: 10px;
+	border: 2px solid #B9B9B9;
+	font-size: 18px;
+	color: #B9B9B9;
+	padding: 20px;
+}
+
+.Lbutton {
+	width: 494px;
+	height: 60px;
+	border-radius: 10px;
+	background: #A6C81E;
+	font-size: 18px;
+	text-align: center;
+	line-height: 60px;
+	margin: 20px 53px;
+	color: white;
+}
+
+.modal {
+	position: fixed;
+    	left: 50%;
+    	top: 50%;
+    	transform: translate(-50%, -50%);
+	opacity: 0;
+	z-index: 1050;
+	pointer-events: none;
+}
+
+.modal:target {
+	opacity: 1;
+	pointer-events: auto;
+ 	overflow-y: auto;
+}
+
+.close {
+	display: flex;
+	justify-content: flex-end;
+	padding: 20px;
+	
+}
